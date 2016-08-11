@@ -40,7 +40,7 @@ class HttpRequester implements Http.Requester {
             xhr.setRequestHeader("Content-Type", this.contentType);
         }
 
-        xhr.setRequestHeader("X-CodePush-SDK-Version", cordova.require("cordova/plugin_list").metadata["code-push"]);
+        xhr.setRequestHeader("X-CodePush-SDK-Version", '1.9.0-beta');
         xhr.send(requestBody);
     }
 

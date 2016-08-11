@@ -1,11 +1,11 @@
 
- /******************************************************************************************** 
- 	 THIS FILE HAS BEEN COMPILED FROM TYPESCRIPT SOURCES. 
- 	 PLEASE DO NOT MODIFY THIS FILE AS YOU WILL LOSE YOUR CHANGES WHEN RECOMPILING. 
- 	 ALSO, PLEASE DO NOT SUBMIT PULL REQUESTS WITH CHANGES TO THIS FILE. 
- 	 INSTEAD, EDIT THE TYPESCRIPT SOURCES UNDER THE WWW FOLDER. 
- 	 FOR MORE INFORMATION, PLEASE SEE CONTRIBUTING.md. 
- *********************************************************************************************/ 
+ /********************************************************************************************
+ 	 THIS FILE HAS BEEN COMPILED FROM TYPESCRIPT SOURCES.
+ 	 PLEASE DO NOT MODIFY THIS FILE AS YOU WILL LOSE YOUR CHANGES WHEN RECOMPILING.
+ 	 ALSO, PLEASE DO NOT SUBMIT PULL REQUESTS WITH CHANGES TO THIS FILE.
+ 	 INSTEAD, EDIT THE TYPESCRIPT SOURCES UNDER THE WWW FOLDER.
+ 	 FOR MORE INFORMATION, PLEASE SEE CONTRIBUTING.md.
+ *********************************************************************************************/
 
 
 "use strict";
@@ -34,7 +34,7 @@ var HttpRequester = (function () {
         if (this.contentType) {
             xhr.setRequestHeader("Content-Type", this.contentType);
         }
-        xhr.setRequestHeader("X-CodePush-SDK-Version", cordova.require("cordova/plugin_list").metadata["code-push"]);
+        xhr.setRequestHeader("X-CodePush-SDK-Version", '1.9.0-beta');
         xhr.send(requestBody);
     };
     HttpRequester.prototype.getHttpMethodName = function (verb) {
